@@ -4,6 +4,14 @@ Project to learn Matplotlib.
 
 ## Requirements
 
+### Python packages
+
+Run:
+
+```bash
+pip install requirements.txt
+```
+
 ### Use show()
 
 Install `tk`:
