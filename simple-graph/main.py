@@ -1,13 +1,14 @@
-import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-from cycler import cycler
 
 # https://matplotlib.org/stable/tutorials/introductory/customizing.html#runtime-rc-settings
 
 mpl.use('TkAgg')
 mpl.rcParams['lines.linewidth'] = 2
 mpl.rcParams['lines.linestyle'] = '--'
-data = np.random.randn(50)
-plt.plot(data)
-plt.show()
+x = [0, 1, 2, 3, 4, 5]
+y = [2, 3, 4, 8, 1, 2.3]
+fig, ax = plt.subplots()
+ax.plot(x, y)
+#fig.show()
+fig.savefig("result.png")
